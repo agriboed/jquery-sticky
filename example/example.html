@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example jQuery.stickyElement Page</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script src="./stickyElement.min.js"></script>
+</head>
+<body>
+
+<nav id="example1">
+    I'm a <strong>first</strong> example element
+</nav>
+
+<article class="container">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis dui nisl, ac pharetra ex pulvinar eu.
+        Pellentesque a molestie arcu. Praesent at nisi enim. Curabitur sagittis justo ut lobortis placerat. Suspendisse
+        potenti. Cras posuere placerat nulla in euismod. In hac habitasse platea dictumst. Nam viverra id dolor vitae
+        vehicula. Vestibulum faucibus purus ultrices ex efficitur bibendum. Donec consectetur, tellus sit amet
+        condimentum fermentum, odio neque congue arcu, at luctus risus massa rhoncus dui. Phasellus nec pretium augue.
+        Sed ultricies nunc sed turpis efficitur venenatis. Nam pulvinar finibus tellus, in scelerisque urna aliquet id.
+        Duis sed aliquet risus.
+    </p>
+    <p>
+        Donec id nisl blandit purus pretium efficitur ac ut sem. Suspendisse vitae facilisis nisl, a congue leo. In
+        molestie lacus sit amet tempus consectetur. Vestibulum interdum consequat justo pellentesque aliquam. Cras
+        mollis vitae nisi ut tristique. Vestibulum condimentum ut elit molestie lacinia. Integer et aliquam erat.
+        Aliquam sodales suscipit elit, ut pharetra mauris porttitor at. Praesent ullamcorper tincidunt placerat. Donec
+        sed velit sed nunc luctus tincidunt id accumsan mauris. Curabitur pulvinar vehicula scelerisque. Pellentesque in
+        massa non orci pulvinar mollis sit amet ut libero. Nunc ut maximus purus, eu porttitor risus. Vestibulum tortor
+        diam, pulvinar mattis pulvinar vitae, mattis eget purus. Morbi at tempor enim.
+    </p>
+    <p>
+        Nullam tempus nec purus luctus pharetra. Quisque dignissim justo purus, mattis tincidunt nisl efficitur nec.
+        Donec tempus, elit condimentum mollis ultricies, dolor sem fermentum nisl, vel rhoncus leo velit sed metus.
+        Curabitur volutpat felis eget vulputate euismod. Proin vitae aliquam justo. Pellentesque habitant morbi
+        tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus nulla mi, tincidunt non imperdiet
+        egestas, placerat nec risus. Nam vel accumsan velit.
+    </p>
+    <p>
+        Duis luctus est at neque vulputate tincidunt. Quisque quis lectus felis. Curabitur a nulla vel ipsum interdum
+        efficitur. Vestibulum venenatis arcu vitae euismod elementum. Aenean sollicitudin nec massa nec pretium.
+        Pellentesque rutrum eget justo nec molestie. Sed convallis justo et dictum venenatis. Integer consequat massa
+        commodo elit aliquam venenatis. In elementum ex in mattis dignissim. Cras mauris est, tincidunt at varius non,
+        ullamcorper sit amet eros. Nullam ac eros lacus. Suspendisse potenti. Etiam lacus mauris, suscipit vel sem et,
+        malesuada luctus velit. Morbi finibus non libero at efficitur.
+    </p>
+    <p>
+        Nam viverra, eros ut facilisis sodales, risus diam pellentesque turpis, sed interdum tellus sem sed turpis. Duis
+        dapibus lobortis odio, et volutpat ante consequat semper. Donec ac commodo nibh. Suspendisse potenti. Phasellus
+        faucibus dictum dui, sit amet elementum justo fermentum ac. Donec vitae suscipit felis, nec molestie augue.
+        Morbi sit amet velit ligula. Phasellus a arcu consequat, fermentum erat vel, faucibus odio. Vestibulum a
+        accumsan dui.
+    </p>
+</article>
+
+<div id="example2">
+    I'm a <strong>second</strong> example element
+</div>
+
+<article class="container">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis dui nisl, ac pharetra ex pulvinar eu.
+        Pellentesque a molestie arcu. Praesent at nisi enim. Curabitur sagittis justo ut lobortis placerat. Suspendisse
+        potenti. Cras posuere placerat nulla in euismod. In hac habitasse platea dictumst. Nam viverra id dolor vitae
+        vehicula. Vestibulum faucibus purus ultrices ex efficitur bibendum. Donec consectetur, tellus sit amet
+        condimentum fermentum, odio neque congue arcu, at luctus risus massa rhoncus dui. Phasellus nec pretium augue.
+        Sed ultricies nunc sed turpis efficitur venenatis. Nam pulvinar finibus tellus, in scelerisque urna aliquet id.
+        Duis sed aliquet risus.
+    </p>
+    <p>
+        Donec id nisl blandit purus pretium efficitur ac ut sem. Suspendisse vitae facilisis nisl, a congue leo. In
+        molestie lacus sit amet tempus consectetur. Vestibulum interdum consequat justo pellentesque aliquam. Cras
+        mollis vitae nisi ut tristique. Vestibulum condimentum ut elit molestie lacinia. Integer et aliquam erat.
+        Aliquam sodales suscipit elit, ut pharetra mauris porttitor at. Praesent ullamcorper tincidunt placerat. Donec
+        sed velit sed nunc luctus tincidunt id accumsan mauris. Curabitur pulvinar vehicula scelerisque. Pellentesque in
+        massa non orci pulvinar mollis sit amet ut libero. Nunc ut maximus purus, eu porttitor risus. Vestibulum tortor
+        diam, pulvinar mattis pulvinar vitae, mattis eget purus. Morbi at tempor enim.
+    </p>
+    <p>
+        Nullam tempus nec purus luctus pharetra. Quisque dignissim justo purus, mattis tincidunt nisl efficitur nec.
+        Donec tempus, elit condimentum mollis ultricies, dolor sem fermentum nisl, vel rhoncus leo velit sed metus.
+        Curabitur volutpat felis eget vulputate euismod. Proin vitae aliquam justo. Pellentesque habitant morbi
+        tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus nulla mi, tincidunt non imperdiet
+        egestas, placerat nec risus. Nam vel accumsan velit.
+    </p>
+    <p>
+        Duis luctus est at neque vulputate tincidunt. Quisque quis lectus felis. Curabitur a nulla vel ipsum interdum
+        efficitur. Vestibulum venenatis arcu vitae euismod elementum. Aenean sollicitudin nec massa nec pretium.
+        Pellentesque rutrum eget justo nec molestie. Sed convallis justo et dictum venenatis. Integer consequat massa
+        commodo elit aliquam venenatis. In elementum ex in mattis dignissim. Cras mauris est, tincidunt at varius non,
+        ullamcorper sit amet eros. Nullam ac eros lacus. Suspendisse potenti. Etiam lacus mauris, suscipit vel sem et,
+        malesuada luctus velit. Morbi finibus non libero at efficitur.
+    </p>
+    <p>
+        Nam viverra, eros ut facilisis sodales, risus diam pellentesque turpis, sed interdum tellus sem sed turpis. Duis
+        dapibus lobortis odio, et volutpat ante consequat semper. Donec ac commodo nibh. Suspendisse potenti. Phasellus
+        faucibus dictum dui, sit amet elementum justo fermentum ac. Donec vitae suscipit felis, nec molestie augue.
+        Morbi sit amet velit ligula. Phasellus a arcu consequat, fermentum erat vel, faucibus odio. Vestibulum a
+        accumsan dui.
+    </p>
+    <div id="example3">
+        I'm <strong>third</strong> example with modal.
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large
+            modal
+        </button>
+
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <p>
+                        Duis luctus est at neque vulputate tincidunt. Quisque quis lectus felis. Curabitur a nulla vel
+                        ipsum interdum
+                        efficitur. Vestibulum venenatis arcu vitae euismod elementum. Aenean sollicitudin nec massa nec
+                        pretium.
+                        Pellentesque rutrum eget justo nec molestie. Sed convallis justo et dictum venenatis. Integer
+                        consequat massa
+                        commodo elit aliquam venenatis. In elementum ex in mattis dignissim. Cras mauris est, tincidunt
+                        at varius non,
+                        ullamcorper sit amet eros. Nullam ac eros lacus. Suspendisse potenti. Etiam lacus mauris,
+                        suscipit vel sem et,
+                        malesuada luctus velit. Morbi finibus non libero at efficitur.
+                    </p>
+                    <p>
+                        Nam viverra, eros ut facilisis sodales, risus diam pellentesque turpis, sed interdum tellus sem
+                        sed turpis. Duis
+                        dapibus lobortis odio, et volutpat ante consequat semper. Donec ac commodo nibh. Suspendisse
+                        potenti. Phasellus
+                        faucibus dictum dui, sit amet elementum justo fermentum ac. Donec vitae suscipit felis, nec
+                        molestie augue.
+                        Morbi sit amet velit ligula. Phasellus a arcu consequat, fermentum erat vel, faucibus odio.
+                        Vestibulum a
+                        accumsan dui.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+
+<article class="container">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis dui nisl, ac pharetra ex pulvinar eu.
+        Pellentesque a molestie arcu. Praesent at nisi enim. Curabitur sagittis justo ut lobortis placerat. Suspendisse
+        potenti. Cras posuere placerat nulla in euismod. In hac habitasse platea dictumst. Nam viverra id dolor vitae
+        vehicula. Vestibulum faucibus purus ultrices ex efficitur bibendum. Donec consectetur, tellus sit amet
+        condimentum fermentum, odio neque congue arcu, at luctus risus massa rhoncus dui. Phasellus nec pretium augue.
+        Sed ultricies nunc sed turpis efficitur venenatis. Nam pulvinar finibus tellus, in scelerisque urna aliquet id.
+        Duis sed aliquet risus.
+    </p>
+    <p>
+        Donec id nisl blandit purus pretium efficitur ac ut sem. Suspendisse vitae facilisis nisl, a congue leo. In
+        molestie lacus sit amet tempus consectetur. Vestibulum interdum consequat justo pellentesque aliquam. Cras
+        mollis vitae nisi ut tristique. Vestibulum condimentum ut elit molestie lacinia. Integer et aliquam erat.
+        Aliquam sodales suscipit elit, ut pharetra mauris porttitor at. Praesent ullamcorper tincidunt placerat. Donec
+        sed velit sed nunc luctus tincidunt id accumsan mauris. Curabitur pulvinar vehicula scelerisque. Pellentesque in
+        massa non orci pulvinar mollis sit amet ut libero. Nunc ut maximus purus, eu porttitor risus. Vestibulum tortor
+        diam, pulvinar mattis pulvinar vitae, mattis eget purus. Morbi at tempor enim.
+    </p>
+    <p>
+        Nullam tempus nec purus luctus pharetra. Quisque dignissim justo purus, mattis tincidunt nisl efficitur nec.
+        Donec tempus, elit condimentum mollis ultricies, dolor sem fermentum nisl, vel rhoncus leo velit sed metus.
+        Curabitur volutpat felis eget vulputate euismod. Proin vitae aliquam justo. Pellentesque habitant morbi
+        tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus nulla mi, tincidunt non imperdiet
+        egestas, placerat nec risus. Nam vel accumsan velit.
+    </p>
+    <p>
+        Duis luctus est at neque vulputate tincidunt. Quisque quis lectus felis. Curabitur a nulla vel ipsum interdum
+        efficitur. Vestibulum venenatis arcu vitae euismod elementum. Aenean sollicitudin nec massa nec pretium.
+        Pellentesque rutrum eget justo nec molestie. Sed convallis justo et dictum venenatis. Integer consequat massa
+        commodo elit aliquam venenatis. In elementum ex in mattis dignissim. Cras mauris est, tincidunt at varius non,
+        ullamcorper sit amet eros. Nullam ac eros lacus. Suspendisse potenti. Etiam lacus mauris, suscipit vel sem et,
+        malesuada luctus velit. Morbi finibus non libero at efficitur.
+    </p>
+    <p>
+        Nam viverra, eros ut facilisis sodales, risus diam pellentesque turpis, sed interdum tellus sem sed turpis. Duis
+        dapibus lobortis odio, et volutpat ante consequat semper. Donec ac commodo nibh. Suspendisse potenti. Phasellus
+        faucibus dictum dui, sit amet elementum justo fermentum ac. Donec vitae suscipit felis, nec molestie augue.
+        Morbi sit amet velit ligula. Phasellus a arcu consequat, fermentum erat vel, faucibus odio. Vestibulum a
+        accumsan dui.
+    </p>
+</article>
+
+<article class="container">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis dui nisl, ac pharetra ex pulvinar eu.
+        Pellentesque a molestie arcu. Praesent at nisi enim. Curabitur sagittis justo ut lobortis placerat. Suspendisse
+        potenti. Cras posuere placerat nulla in euismod. In hac habitasse platea dictumst. Nam viverra id dolor vitae
+        vehicula. Vestibulum faucibus purus ultrices ex efficitur bibendum. Donec consectetur, tellus sit amet
+        condimentum fermentum, odio neque congue arcu, at luctus risus massa rhoncus dui. Phasellus nec pretium augue.
+        Sed ultricies nunc sed turpis efficitur venenatis. Nam pulvinar finibus tellus, in scelerisque urna aliquet id.
+        Duis sed aliquet risus.
+    </p>
+    <p>
+        Donec id nisl blandit purus pretium efficitur ac ut sem. Suspendisse vitae facilisis nisl, a congue leo. In
+        molestie lacus sit amet tempus consectetur. Vestibulum interdum consequat justo pellentesque aliquam. Cras
+        mollis vitae nisi ut tristique. Vestibulum condimentum ut elit molestie lacinia. Integer et aliquam erat.
+        Aliquam sodales suscipit elit, ut pharetra mauris porttitor at. Praesent ullamcorper tincidunt placerat. Donec
+        sed velit sed nunc luctus tincidunt id accumsan mauris. Curabitur pulvinar vehicula scelerisque. Pellentesque in
+        massa non orci pulvinar mollis sit amet ut libero. Nunc ut maximus purus, eu porttitor risus. Vestibulum tortor
+        diam, pulvinar mattis pulvinar vitae, mattis eget purus. Morbi at tempor enim.
+    </p>
+    <p>
+        Nullam tempus nec purus luctus pharetra. Quisque dignissim justo purus, mattis tincidunt nisl efficitur nec.
+        Donec tempus, elit condimentum mollis ultricies, dolor sem fermentum nisl, vel rhoncus leo velit sed metus.
+        Curabitur volutpat felis eget vulputate euismod. Proin vitae aliquam justo. Pellentesque habitant morbi
+        tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus nulla mi, tincidunt non imperdiet
+        egestas, placerat nec risus. Nam vel accumsan velit.
+    </p>
+    <p>
+        Duis luctus est at neque vulputate tincidunt. Quisque quis lectus felis. Curabitur a nulla vel ipsum interdum
+        efficitur. Vestibulum venenatis arcu vitae euismod elementum. Aenean sollicitudin nec massa nec pretium.
+        Pellentesque rutrum eget justo nec molestie. Sed convallis justo et dictum venenatis. Integer consequat massa
+        commodo elit aliquam venenatis. In elementum ex in mattis dignissim. Cras mauris est, tincidunt at varius non,
+        ullamcorper sit amet eros. Nullam ac eros lacus. Suspendisse potenti. Etiam lacus mauris, suscipit vel sem et,
+        malesuada luctus velit. Morbi finibus non libero at efficitur.
+    </p>
+    <p>
+        Nam viverra, eros ut facilisis sodales, risus diam pellentesque turpis, sed interdum tellus sem sed turpis. Duis
+        dapibus lobortis odio, et volutpat ante consequat semper. Donec ac commodo nibh. Suspendisse potenti. Phasellus
+        faucibus dictum dui, sit amet elementum justo fermentum ac. Donec vitae suscipit felis, nec molestie augue.
+        Morbi sit amet velit ligula. Phasellus a arcu consequat, fermentum erat vel, faucibus odio. Vestibulum a
+        accumsan dui.
+    </p>
+</article>
+
+<script>
+    $('#example1').stickyElement({
+        fade: false
+    });
+
+    $('#example2').stickyElement({
+        top: '100px',
+        minWidth: 1000,
+        maxWidth: 1800,
+    });
+
+    $('#example3').stickyElement({
+        top: '50%',
+        left: '0',
+        addClass: 'example3',
+        addAttributes: {
+            'data-name': 'value',
+            'data-screen': 'mobile'
+        }
+    });
+</script>
+
+<style>
+    #example1 {
+        padding: 20px 0;
+        text-align: center;
+        background: #d6e0ec;
+        width: 100%;
+    }
+
+    #example2 {
+        background: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 15px #f2f2f2f2;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+        width: 300px;
+        margin: 20px 0 20px 40%;
+    }
+
+    #example3 {
+        background: #ffd8ad;
+        padding: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 15px #f2f2f2f2;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .example3 {
+        background: #000 !important;
+        color: #fff;
+        width: 100%;
+        display: block;
+    }
+</style>
+</body>
+</html>
